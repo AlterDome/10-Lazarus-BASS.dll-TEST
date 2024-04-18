@@ -1,0 +1,107 @@
+object Form1: TForm1
+  Left = 215
+  Height = 174
+  Top = 250
+  Width = 374
+  AllowDropFiles = True
+  AlphaBlend = True
+  BorderStyle = bsNone
+  BorderWidth = 1
+  Caption = 'Form1'
+  ClientHeight = 174
+  ClientWidth = 374
+  Color = clInactiveCaption
+  DragMode = dmAutomatic
+  Font.CharSet = RUSSIAN_CHARSET
+  Font.Color = clBlack
+  Font.Height = -12
+  Font.Name = 'Sitka Small'
+  Font.Pitch = fpVariable
+  Font.Quality = fqDraft
+  Font.Style = [fsItalic]
+  OnCreate = FormCreate
+  UseDockManager = True
+  LCLVersion = '2.0.6.0'
+  object Button1: TButton
+    Left = 336
+    Height = 25
+    Top = 0
+    Width = 35
+    Caption = 'Exit'
+    OnClick = Button1Click
+    TabOrder = 0
+  end
+  object Button2: TButton
+    Left = 0
+    Height = 22
+    Top = 152
+    Width = 374
+    Caption = 'Playlist'
+    OnClick = Button2Click
+    TabOrder = 1
+  end
+  object Button3: TButton
+    Left = 256
+    Height = 25
+    Top = 0
+    Width = 75
+    Caption = 'minimize'
+    OnClick = Button3Click
+    TabOrder = 2
+  end
+  object Button4: TButton
+    Left = 208
+    Height = 25
+    Top = 0
+    Width = 43
+    Caption = 'Tray'
+    OnClick = Button4Click
+    TabOrder = 3
+  end
+  object Button5: TButton
+    Left = 64
+    Height = 25
+    Top = 104
+    Width = 56
+    Caption = 'Play ->'
+    OnClick = Button5Click
+    TabOrder = 4
+  end
+  object Button6: TButton
+    Left = 128
+    Height = 25
+    Top = 104
+    Width = 56
+    Caption = 'Pause ||'
+    OnClick = Button6Click
+    TabOrder = 5
+  end
+  object Button7: TButton
+    Left = 8
+    Height = 25
+    Top = 104
+    Width = 48
+    Caption = 'STOP'
+    OnClick = Button7Click
+    TabOrder = 6
+  end
+  object Button8: TButton
+    Left = 72
+    Height = 25
+    Top = 128
+    Width = 40
+    Caption = 'Open'
+    OnClick = Button8Click
+    TabOrder = 7
+  end
+  object TrayIcon1: TTrayIcon
+    BalloonFlags = bfInfo
+    Visible = True
+    left = 8
+    top = 8
+  end
+  object OpenDialog1: TOpenDialog
+    left = 48
+    top = 8
+  end
+end

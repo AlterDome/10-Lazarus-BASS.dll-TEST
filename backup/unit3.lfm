@@ -1,0 +1,30 @@
+object Form3: TForm3
+  Left = 305
+  Height = 21
+  Top = 250
+  Width = 336
+  BorderStyle = bsNone
+  Caption = 'Form3'
+  ClientHeight = 21
+  ClientWidth = 336
+  OnCreate = FormCreate
+  object Button1: TButton
+    Left = 304
+    Height = 17
+    Top = 0
+    Width = 27
+    Caption = 'Х'
+    OnClick = Button1Click
+    TabOrder = 0
+  end
+  object Button2: TButton
+    Left = 280
+    Height = 17
+    Top = 0
+    Width = 27
+    Cancel = True
+    Caption = 'PL'
+    OnClick = Button2Click
+    TabOrder = 1
+  end
+end
